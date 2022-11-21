@@ -1,3 +1,5 @@
 from newVar import *
 
-print(totalHealth)
+print(backpack)
+varAssign()
+print(backpack)
