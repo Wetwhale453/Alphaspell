@@ -21,7 +21,6 @@ totHealth = "none"
 curHealth = "none"
 
 def varAssign():
-    glob = globals()
     # variable assign
     print("enter a username")
     username = input()
@@ -63,3 +62,4 @@ def varAssign():
         #weapon = weapon("wooden shield", 5, 0, rarities[0])
         totHealth = 150
         curHealth = totHealth
+
