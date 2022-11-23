@@ -1,0 +1,7 @@
+Info//
+
+AlphaSpell is a text-based progressive RPG game.
+The player is given 4 classes to choose from, each with its own unique fighting style.
+Throughout the game, the player can acquire things such as money, objects, weapons, and maybe armor (if I decide to add that).
+The player will often visit a place referred to as the checkpoint. This checkpoint holds everything they would ever need when they aren't fighting enemies and gathering resources.
+All data linked to a place can be saved in the checkpoint by writing it to a JSON file (>:( don't mess with this!!!).

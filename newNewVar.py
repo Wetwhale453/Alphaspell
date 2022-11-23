@@ -14,6 +14,7 @@ player = {
 
     "username" : "none",
     "playerClass" : "none",
+    "money" : 0,
     "backpack" : [],
     "special" : "none",
     "weapon" : weapon("none", 0, 0, rarities[0]),
@@ -61,3 +62,47 @@ def varAssign(player):
         player["weapon"] = weapon("wooden shield", 5, 0, rarities[0])
         player["totalHealth"] = 150
         player["currentHealth"] = 150
+        return player
+
+def checkpoint():
+    print("welcome to the checkpoint")
+    print(
+        "1 - save game",
+        "2 - new game",
+        "3 - load game",
+        "4 - player stats",
+        "5 - game help",
+    )
+    checkpointInput = input()
+    match checkpointInput:
+        case "0":
+            print("you found a secret! +25 coins")
+            player["money"] += 25
+        case "1":
+            pass
+            #import json files
+        case "2":
+            pass
+            #make new json file
+        case "3":
+            pass
+            #load json file
+        case "4":
+            print(
+                f"username = {player['username']}",
+                f"player class = {player['playerClass']}",
+                f"money = {player['money']}",
+                f"items in backpack = {', '.join(player['backpack'])}",
+                f"special = {player['special']}",
+                f"total health = {player['totalHealth']}",
+                f"current health = {player['currentHealth']}",
+                "weapon stats//",
+                f" name = {player['weapon'].name}"
+                f" damage = {player['weapon'].damage}"
+                f" price = {player['weapon'].price}"
+                f" rarity = {player['weapon'].rarity}"
+            )
+        case "5":
+            #read off of txt file
+            pass
+    
